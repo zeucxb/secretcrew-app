@@ -1,23 +1,26 @@
 {
-  "name": "secret-crew",
-  "version": "0.0.0",
-  "description": "Hello Expo!",
-  "author": null,
+  "name": "secret-crew-app",
+  "version": "0.1.0",
   "private": true,
-  "main": "main.js",
+  "devDependencies": {
+    "react-native-scripts": "0.0.27",
+    "jest-expo": "^0.3.0",
+    "react-test-renderer": "~15.4.1"
+  },
+  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+  "scripts": {
+    "start": "react-native-scripts start",
+    "eject": "react-native-scripts eject",
+    "android": "react-native-scripts android",
+    "ios": "react-native-scripts ios",
+    "test": "node node_modules/jest/bin/jest.js --watch"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
   "dependencies": {
-    "@expo/ex-navigation": "^2.9.4",
-    "babel-eslint": "^7.2.1",
-    "eslint": "^3.19.0",
-    "eslint-config-airbnb": "^14.1.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-react": "^6.10.3",
-    "expo": "^15.0.2",
-    "nachos-ui": "^0.1.2",
+    "expo": "^15.1.0",
     "react": "~15.4.0",
-    "react-native": "https://github.com/exponent/react-native/archive/sdk-15.0.0.tar.gz",
-    "react-native-swiper": "^1.5.4",
-    "react-native-vector-icons": "^4.0.0"
+    "react-native": "0.42.3"
   }
 }
